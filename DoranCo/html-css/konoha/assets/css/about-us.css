@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+  h1 {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* SECTION #1: */
+
+.bio {
+    margin: 20px;
+}
+
+.bio p {
+    margin: 20px;
+}

@@ -1,0 +1,85 @@
+/* RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none; /* prevents user from selecting text (and thus copy/paste */
+}
+
+/* GENERAL */
+a {
+  text-decoration: none;
+}
+
+header {
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  min-height: 12vh;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li > a,
+header > a {
+  color: white;
+}
+
+li {
+  display: block;
+  width: 100px;
+  text-align: center;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 769px) {
+  header > a:nth-child(2),
+  ul > li:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mobile {
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 10;
+
+  }
+
+  ul > li:first-child > a {
+    color: white;
+  }
+
+  /* ! this css method is to be used only for practice purposes as it is not automatically refreshed if you send the page link with the menu unfold */
+
+  #mobile:not(:target) { /*this indicated the rules to apply when the selector is not targeted (clicked)*/
+    right: -100%;
+    transition: right 1.5s;
+  }
+
+  #mobile:target {
+    right: 0;
+    transition: 0.5s;
+  }
+
+  header > a:nth-child(2) {
+    position: absolute;
+    right: 20px;
+  }
+
+}

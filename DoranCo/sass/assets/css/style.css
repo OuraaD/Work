@@ -1,0 +1,136 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main, p {
+  color: blue;
+  width: 400px; }
+
+main {
+  width: 20.7575757576%;
+  height: 800px;
+  background: #ff9367;
+  background: #9a2d00; }
+
+header {
+  width: 100%;
+  background: #ff9367;
+  min-height: 40px; }
+  header nav {
+    width: 50.5050505051%;
+    background: #ff4b01;
+    height: 40px; }
+    header nav ul {
+      list-style: none; }
+      header nav ul li {
+        display: inline-block;
+        width: 100px; }
+        header nav ul li a {
+          text-decoration: none;
+          color: white; }
+          header nav ul li a:hover {
+            color: black; }
+
+#nav-links {
+  display: flex;
+  list-style: none; }
+  @media screen and (min-width: 1024px) {
+    #nav-links li {
+      display: block;
+      height: 40px;
+      width: 100px; }
+      #nav-links li a {
+        text-decoration: none;
+        color: white; } }
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    #nav-links {
+      flex-direction: column;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.5); }
+      #nav-links li {
+        display: block;
+        height: 40px;
+        width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

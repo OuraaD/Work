@@ -1,0 +1,56 @@
+//* Directives
+
+// creates a block of reusable rules called a mixin 
+// we use only one mixin per element (same logical as the id)
+@mixin assa() {
+  width: percentage(411px, 1980px);
+  height: $value * 80;
+  // background: $orange;
+}
+
+@mixin nav() {
+  width: percentage(1000px, 1980px );
+  background: $orange;
+  height: $value * 4;
+}
+
+@mixin li() {
+  display: inline-block;
+  width: $value * 10;
+  
+}
+
+
+// creates a block of reusable rules called a placeholder (same logical as .class)
+//! we can't use variables in placeholders
+%ablo { 
+  color: blue;
+  width: 400px;
+}
+
+
+//* Fonctions
+@function percentage($value, $number) {
+  @return ($value / $number) * 100%;
+}
+
+
+//* Conditions
+@mixin responsive-for($media) {
+  @if $media == computer {
+    @media screen and ($morethan : $laptop) {@content;}
+  }
+
+  @else if $media == tablet {
+    @media screen and ($morethan: ($tablet + 1)) and ($lessthan : ($laptop - 1)) {@content;}
+  }
+
+  @else if $media == tabnphone {
+    @media screen and ($morethan : $phone) and ($lessthan : $tablet) {@content;}
+  }
+
+  @else if $media == smartphone {
+    @media screen and ($lessthan : ($phone - 1)) {@content;}
+  }
+  
+}

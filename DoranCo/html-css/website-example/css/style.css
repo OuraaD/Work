@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER: */
+
+header {
+  background-color: rgb(8, 8, 56);
+  padding: 50px;
+}
+
+.top-part {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* MAIN SECTION: */
+
+main {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+    margin-bottom: 100px;
+}
+
+/* COMPONENTS */
+
+.button {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #9b0517;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-size: small;
+    text-transform: capitalize;
+
+  }
+
+.button:hover {
+    color: gray;
+    transition: 0.3s;
+}
+
+/* .button:visited {
+    color: gray;
+} */
+
+/* SECTION #1: HERO SECTION */
+
+.hero {
+  min-height: 429px;
+  margin: 60px auto;
+  padding: 80px 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.658), transparent), url("../img/hero-bckgrnd.bmp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  color: #fff;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 33px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* SECTION #2: QUI SOMMES-NOUS ? */
+
+.about-us {
+  margin: auto;
+  min-height: 300px;
+  /* border: solid; */
+  padding: 10px;
+}
+
+.about-us p {
+  margin-top: 10px;
+}
+.about-us a {
+  color: #9b0517;
+  text-decoration: none;
+}
+
+.about-us a:hover {
+  color: gray;
+  transition: 1s;
+}
+
+/* SECTION #3: SUB HERO */
+
+.sub-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  min-height: 429px;
+  margin: 60px auto;
+  padding: 100px 10px;
+  /* border: solid black; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.658), transparent), url("../img/sub-hero-bckgrnd.bmp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  color: white;
+  font-size: x-large;
+  /* text-align: left; */
+}
+
+.sub-hero a {
+    display: block;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+.continue {
+  width: 25%;
+}
+
+.conventionee {
+  width: 30%;
+}
+
+.text-banner {
+  color: white;
+  background-color: #ddceb3;
+  padding: 17px;
+}
+
+/* SECTION #4: GRID AND ROWS */
+
+.rows {
+  min-height: 429px;
+  margin: 60px auto;
+  padding: 80px 10px;
+}
+
+/* SECTION #5: LAST HERO */
+
+
+/*! to force an image to be contained fully into the parent box:
+.container-x img {
+    widht: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: top left;
+*/

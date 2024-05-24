@@ -1,0 +1,71 @@
+/* Cascading Style Sheet, means that a style applied to a parent element is inherited by their children */
+/* body{
+    color: green;
+} */
+
+body{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    color: red;
+    text-shadow: 10px 10px gray ;
+    border: solid black;
+    border-radius: 40% 0 ;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+/* The tag selector is used to style all element of that particular type */
+p{
+    color: blue;
+}
+
+h2{
+    transition: transform 2s;
+    text-decoration: underline;
+}
+h2:hover{
+    transform: rotate(360deg);
+}
+
+/* The class selector is used to mark one or many elements that we want styled similarly */
+.text-in-orange {
+    color: orange;
+}
+
+/* the id selector is used to target one element only and has to be unique but we usually
+leave them for javascript */
+/* #title{
+    color: blue;
+} */
+
+/* we can select several elements at the same time by seperating them with a comma */
+/* h2, .text-in-orange{
+    /* font-style: italic; */
+/* } */ */
+
+/* the descendant selector is used to target specific elements inside a parent element */
+.paragraphs h2{
+    text-decoration: underline;
+}
+
+.text-in-italic{
+    font-size: it;
+}
+
+.in-gray{
+    color: rgb(150, 150, 150);
+}
+
+.bigger{
+    display: block;
+    transition: transform 2s;
+}
+.bigger:hover{
+    transform: scale(2);
+}
+
